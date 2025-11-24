@@ -10,7 +10,7 @@ pro=fread("pQTL_prQTL.txt")
 pro=pro[,c("CHR","BP","SNP","P")]
 colnames(pro)=c("Chromosome","Position","SNP","protein")
 
-meth=fread("C:/Users/yp/Desktop/合并写文章/甲基化/meQTL_5e8_unique_for_cmplot.txt")
+meth=fread("meQTL.txt")
 colnames(meth)[2:3]=c("Chromosome","Position")
 meth=as.data.frame(meth)
 
@@ -51,6 +51,7 @@ CMplot(
 
 dev.off()
   
+
 
 
 
