@@ -30,27 +30,28 @@ SNPs <- list(
 )
 
 
-pdf("cmplot_output.pdf", width = 12, height = 12)  # 设置宽度和高度，依据需要调整
+pdf("cmplot_output.pdf", width = 12, height = 12)  
 
 
 CMplot(
   cmdata,
   plot.type = "c",
-  cex = 0.6,  # 调整点的大小，0.3表示比默认值小
+  cex = 0.6,  
   r = 0.4,
   outward = FALSE,
   cir.chr.h = 1.3,
   chr.den.col = "black",
   file.output = FALSE,
   verbose = T,
-  highlight=SNPs,            # 高亮的 SNP 名称（list 对应多个 trait）
+  highlight=SNPs,            
   highlight.type="p",
-  highlight.pch = 18                   # 设置为菱形（pch = 5）
+  highlight.pch = 18                   
 )
 
 
 dev.off()
   
+
 
 
 
